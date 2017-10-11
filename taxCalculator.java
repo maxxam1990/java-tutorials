@@ -1,9 +1,20 @@
 /* 
  * This script was created by Max Acosta on 10/11/17
  * 
+ * DESCRIPTION:
  * The purpose of this program is to demonstrate the use of if else statements, arithmetic operations, and logic to 
  * calculate an employee's gross pay and net pay after tax deductions.
- *
+ * 
+ * PROBLEM SAMPLE:
+ * A fictitious employee just got an offer to work for a company in a different city. The offer looks nice, however, he is 
+ * having doubts about moving to work in this city because the tax deductions on each paycheck are higher.
+ * There are three types of tax deductions; Federal, FICA, and State taxes.
+ * This city also has a law that says that any employee working more than 40 hours per week will be a x1.5 rate.
+ * 
+ * This employee, wants to find out how much money is he really going to be making and how much money is he left-over with.
+ * This is an example of a problem that can be solved with this program.
+ * 
+ * SOLUTION:
  * Here are the conditions we will take into consideration to complete this task:
  * 
  * Condition 1: 
