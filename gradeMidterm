@@ -1,0 +1,70 @@
+import java.util.*;
+
+/* Code created by Max Acosta on 11/9/17
+ 
+   PROBLEM: A teacher has been implementing some new teaching methods. His students just took their MIDTERM exam and the professor has finished grading them.
+   He wants to know if the student's scores reflect positive results or negative results by getting a count of how many students got an A, B, C, D, or F. 
+   
+   CONDITIONS: - The number of students in the classroom will be entered by the user.
+     		   - The user will enter the scores of each student.
+     		   - The program will follow a regular grading criteria to assign letter grades:
+     		     >> A is between 91 and 100
+     		     >> B is between 81 and 90
+     		     >> C is between 71 and 80
+     		     >> D is between 61 and 70
+     		     >> F is less than 60
+*/
+
+public class gradeProject {
+
+	public static void main(String[]args) {
+		
+		// Declare all of the required variables.
+		int i, n, grade, A, B, C, D, F;
+		
+		// Assign a default value of 0 to grade, A, B, C, D, and F.
+		grade = 0; A = 0; B = 0; C = 0; D = 0; F = 0;
+		
+		// Declare Scanner input.
+		Scanner input = new Scanner(System.in);
+		
+		// Prompt the user to enter the number of students and store it into "n".
+		System.out.print("Enter number of student(s): ");
+		n = input.nextInt();
+		
+		// Run a loop to store the count of each grade by comparing user's input with our grading scale.
+		for (i=1; i <= n; i++) {
+			
+			// Prompt user to enter a grade and store into "grade".
+			System.out.print("Enter a grade: ");
+			grade = input.nextInt();
+			
+			// Run the grading criteria conditionals. We will increment our letter name by one every time someone meets the criteria.
+			if (grade >= 90 && grade <100) {
+				A++;
+			}
+			else if (grade >= 80 && grade <90) {
+				B++;
+			}
+			else if (grade >= 70 && grade <80) {
+				C++;
+			}
+			else if (grade >= 60 && grade <70) {
+				D++;
+			}
+			else if (grade < 59) {
+				F++;
+			}			
+		}
+		
+		// Print out the results.
+		System.out.println();
+		System.out.println("The number of students who got an A is: " + A );
+		System.out.println("The number of students who got an B is: " + B );
+		System.out.println("The number of students who got an C is: " + C );
+		System.out.println("The number of students who got an D is: " + D );
+		System.out.println("The number of students who got an F is: " + F );
+		
+	}
+	
+}
